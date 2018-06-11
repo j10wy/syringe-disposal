@@ -1,0 +1,22 @@
+{
+  "name": "sfaf-syringe-disposal",
+  "version": "1.0.0",
+  "description": "An app where SF residents enter in the location of syringes on the street that need to get cleaned up.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffreylowy/syringe-disposal.git"
+  },
+  "keywords": [
+    "syringe-disposal"
+  ],
+  "author": "Jeffrey Lowy <jeffreylowy@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffreylowy/syringe-disposal/issues"
+  },
+  "homepage": "https://github.com/jeffreylowy/syringe-disposal#readme"
+}
