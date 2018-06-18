@@ -12,6 +12,7 @@ $mdc-theme-on-background: #442c2e;
 @import "@material/list/mdc-list";
 @import "@material/image-list/mdc-image-list";
 @import "@material/typography/mdc-typography";
+@import "@material/elevation/mdc-elevation";
 
 html,
 body {
@@ -74,6 +75,12 @@ body {
 
 .home {
   display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
+}
+.shrine-body {
+  @include mdc-elevation(4);
+
+  display: block;
+  overflow: auto;
 }
 
 .shrine-logo-drawer {
