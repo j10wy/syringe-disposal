@@ -1,8 +1,17 @@
+$mdc-theme-primary: #fedbd0;
+$mdc-theme-on-primary: #442c2e;
+$mdc-theme-secondary: #feeae6;
+$mdc-theme-on-secondary: #442c2e;
+$mdc-theme-surface: #fffbfa;
+$mdc-theme-on-surface: #442c2e;
+$mdc-theme-background: #ffffff;
+$mdc-theme-on-background: #442c2e;
 @import "@material/textfield/mdc-text-field";
 @import "@material/button/mdc-button";
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
 @import "@material/image-list/mdc-image-list";
+@import "@material/typography/mdc-typography";
 
 html,
 body {
@@ -17,8 +26,23 @@ body {
 
 // Login page styles
 
+.shrine-login {
+  background-color: $mdc-theme-background;
+  color: $mdc-theme-on-background;
+}
+
+.cancel {
+  @include mdc-button-ink-color(on-primary);
+}
+
 .username,
 .password {
+  &:not(.mdc-text-field--invalid) {
+    @include mdc-text-field-label-color(on-primary);
+  }
+  &.mdc-text-field--focused:not(.mdc-text-field--invalid) {
+    @include mdc-text-field-label-color(on-primary);
+  }
   display: block;
   width: 300px;
   margin: 20px auto;
@@ -60,12 +84,52 @@ body {
 }
 
 .shrine-title {
+  @include mdc-typography(headline6);
   align-self: center;
   margin: 5px auto;
+}
+
+.shrine-select-item-divider {
+  border-bottom-color: #eaa4a4;
+  width: 50px;
+  margin: 0 auto;
+  border-bottom-width: 2px;
+  position: relative;
+  top: -5px;
+}
+
+.shrine-drawer {
+  @include mdc-drawer-fill-color-accessible(primary);
+  @include mdc-drawer-ink-color(on-primary);
+
+  text-transform: uppercase;
+
+  .mdc-list {
+    margin: 70px 5px auto 5px;
+  }
+
+  .mdc-list-item {
+    @include mdc-list-item-primary-text-ink-color(on-primary);
+
+    border-radius: 6px;
+    justify-content: center;
+  }
 }
 
 .product-list {
   @include mdc-image-list-standard-columns(4);
 
   overflow: auto;
+}
+
+.mdc-image-list__supporting {
+  justify-content: center;
+}
+
+.mdc-image-list__item {
+  padding: 10px;
+}
+
+.mdc-image-list__label {
+  @include mdc-typography(subtitle2);
 }
