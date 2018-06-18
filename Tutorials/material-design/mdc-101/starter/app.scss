@@ -1,14 +1,24 @@
-html, body {
+@import "@material/textfield/mdc-text-field";
+
+html,
+body {
   height: 100%;
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   margin: 0;
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
 }
 
 // Login page styles
+
+.username,
+.password {
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+}
 
 .header {
   text-align: center;
