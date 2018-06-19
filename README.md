@@ -32,3 +32,17 @@ ng new Application --style=scss --routing --skip-git
 `--routing` - Generates a routing module named `app-routing.module.ts`.
 
 `--skip-git` - Skiped initializing a git repository when the app was created since the app was generated inside of an exisiting repository.
+
+## Deploy to Firebase
+
+```bash
+# cd into the Application directory
+cd Application
+
+# Run the ng build command with the 'prod' and 'output-path' flags
+# the output path should point to the 'dist' directory
+ng build --prod --output-path dist
+
+# Deploy to Firebase Hosting
+firebase deploy --only hosting -m "optional message describing this deploy"
+```
