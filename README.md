@@ -1,4 +1,4 @@
-# Syringe Disposal Application
+# Introduction
 
 SF residents issue requests for syringe disposal by creating a tickets and mapping the location of the syringes found in public areas. The app then sends an alert to volunteers to help with disposal. On-duty volunteer(s) will claim the tickets and update the status once the reported syringes have been disposed.
 
@@ -16,3 +16,19 @@ SF residents issue requests for syringe disposal by creating a tickets and mappi
 - _*Stretch goal:*_ - Badge system
 - _*Stretch goal:*_ Invite volunteers to appreciation events
 - _*Stretch goal:*_ Create a low threshold incentivized work program using the app. SF residents/erchants may donate to the service, providing stipends to volunteers using a third-party payments through [Braintree](https://www.braintreepayments.com) or [Stripe](https://stripe.com/). This would allow homeless and other low-income folks to sign-in for work to earn income.
+
+## Application
+
+### Generating the Application
+
+The app was created using the Angular CLI with the following command:
+
+```bash
+ng new Application --style=scss --routing --skip-git
+```
+
+`--style=scss` - file extension to be used for style files.
+
+`--routing` - Generates a routing module named `app-routing.module.ts`.
+
+`--skip-git` - Skiped initializing a git repository when the app was created since the app was generated inside of an exisiting repository.
