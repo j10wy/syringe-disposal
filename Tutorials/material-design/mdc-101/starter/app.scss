@@ -1,11 +1,11 @@
-$mdc-theme-primary: #fedbd0;
-$mdc-theme-on-primary: #442c2e;
-$mdc-theme-secondary: #feeae6;
-$mdc-theme-on-secondary: #442c2e;
-$mdc-theme-surface: #fffbfa;
-$mdc-theme-on-surface: #442c2e;
-$mdc-theme-background: #ffffff;
-$mdc-theme-on-background: #442c2e;
+$mdc-theme-primary: #ffcf44;
+$mdc-theme-on-primary: #33333d;
+$mdc-theme-secondary: #ffcf44;
+$mdc-theme-on-secondary: #ffffff;
+$mdc-theme-surface: #33333d;
+$mdc-theme-on-surface: #ffffff;
+$mdc-theme-background: #33333d;
+$mdc-theme-on-background: #ffffff;
 @import "@material/textfield/mdc-text-field";
 @import "@material/button/mdc-button";
 @import "@material/drawer/mdc-drawer";
@@ -33,17 +33,11 @@ body {
 }
 
 .cancel {
-  @include mdc-button-ink-color(on-primary);
+  @include mdc-button-ink-color(on-surface);
 }
 
 .username,
 .password {
-  &:not(.mdc-text-field--invalid) {
-    @include mdc-text-field-label-color(on-primary);
-  }
-  &.mdc-text-field--focused:not(.mdc-text-field--invalid) {
-    @include mdc-text-field-label-color(on-primary);
-  }
   display: block;
   width: 300px;
   margin: 20px auto;
@@ -75,6 +69,8 @@ body {
 
 .home {
   display: flex; // Flexbox is used to easily arrange the persistent drawer and content side-by-side
+  background-color: $mdc-theme-background;
+  color: $mdc-theme-on-background;
 }
 .shrine-body {
   @include mdc-elevation(4);
@@ -97,7 +93,7 @@ body {
 }
 
 .shrine-select-item-divider {
-  border-bottom-color: #eaa4a4;
+  @include mdc-theme-prop(border-bottom-color, primary);
   width: 50px;
   margin: 0 auto;
   border-bottom-width: 2px;
@@ -106,8 +102,9 @@ body {
 }
 
 .shrine-drawer {
-  @include mdc-drawer-fill-color-accessible(primary);
-  @include mdc-drawer-ink-color(on-primary);
+  @include mdc-drawer-fill-color-accessible(surface);
+  @include mdc-drawer-ink-color(on-surface);
+  border-right-width: 0;
 
   text-transform: uppercase;
 
@@ -116,7 +113,7 @@ body {
   }
 
   .mdc-list-item {
-    @include mdc-list-item-primary-text-ink-color(on-primary);
+    @include mdc-list-item-primary-text-ink-color(on-surface);
 
     border-radius: 6px;
     justify-content: center;
@@ -124,8 +121,8 @@ body {
 }
 
 .product-list {
-  @include mdc-image-list-standard-columns(4);
-
+  @include mdc-image-list-masonry-columns(4);
+  padding: 80px 100px 0 100px;
   overflow: auto;
 }
 
