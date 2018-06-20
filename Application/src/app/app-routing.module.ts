@@ -3,7 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 
 const routes: Routes = [
   { path: "login", redirectTo: "" },
-  { path: "help", redirectTo: "https://www.google.com" }
+  { path: "help", redirectTo: "" }
 ];
 
 @NgModule({
