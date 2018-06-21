@@ -9,6 +9,12 @@ export class HomeComponent implements OnInit {
 	clicked: boolean = false;
 	page_title: string = `Home`;
 
+	people: object[] = [
+		{ name: 'Jeff Lowy', age: 35 },
+		{ name: 'Vanessa Quintero', age: 34 },
+		{ name: 'Nick Lowy', age: 34 }
+	];
+
 	test = (): void => {
 		this.clicked = true;
 		setTimeout(() => {
