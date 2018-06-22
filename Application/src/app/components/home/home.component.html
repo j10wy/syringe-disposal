@@ -4,8 +4,8 @@
 </p>
 
 <ul>
-  <li *ngFor="let person of people" appLogger>
-    <h4 [ngClass]="{
+  <li *ngFor="let person of people">
+    <h4 appLogger [ngClass]="{
       'purple': person.name === 'Vanessa Quintero',
       'blue': person.name === 'Jeff Lowy',
       'red': person.name === 'Nick Lowy'
