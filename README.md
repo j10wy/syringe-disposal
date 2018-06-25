@@ -46,3 +46,39 @@ ng build --prod --output-path dist
 # Deploy to Firebase Hosting
 firebase deploy --only hosting -m "optional message describing this deploy"
 ```
+
+## Firebase: Cloud Firestore Database
+
+The data is stored in a Firestore databases. Below are the fields for each document type in the database.
+
+#### Volunteers
+
+- Name
+- Location (Street address, City, Zip)
+- Email
+- Phone
+- Email opt-in
+- Text messages opt-in
+- Approved status
+- Number of pickups
+- Image
+
+#### Report Syringe Pickup
+
+- Name
+- Location
+- Requestor Details
+- Requestor Email follow-up?
+- Requestor Email
+- Number of syringes
+- Status (updated by volunteers)
+- Requestor Time reported
+- Volunteer Time completed
+
+#### Request Regular/Future Inspection
+
+- Name
+- Email
+- Phone
+- Address (Street address, City, State, Zip)
+- One time / On-going
