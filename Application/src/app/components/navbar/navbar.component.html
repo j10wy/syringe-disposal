@@ -1,7 +1,21 @@
-<nav class="navbar">
+<!-- <nav class="navbar">
   <ul>
     <li>Request Pick-up</li>
     <li>Volunteer Login</li>
     <li>Contact</li>
   </ul>
-</nav>
+</nav> -->
+<mdc-app-bar [short]="true" [fixedAdjustElement]="mainContent">
+  <mdc-app-bar-row>
+    <mdc-app-bar-section align="start">
+      <mdc-icon mdcAppBarNavIcon>menu</mdc-icon>
+      <mdc-app-bar-title>Title</mdc-app-bar-title>
+    </mdc-app-bar-section>
+    <mdc-app-bar-section align="end">
+      <mdc-icon mdcAppBarActionItem>file_download</mdc-icon>
+      <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
+      <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
+      <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+    </mdc-app-bar-section>
+  </mdc-app-bar-row>
+</mdc-app-bar>

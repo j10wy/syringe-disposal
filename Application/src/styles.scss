@@ -1,7 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+$mdc-theme-primary: #000;
+$mdc-theme-secondary: #388e3c;
+$mdc-theme-background: #fff;
+
+@import '~@angular-mdc/theme/material';
+
 html,
 body {
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
+}
+
+.demo-main {
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 16px;
+	overflow: auto;
+}
+
+.demo-controls-container {
+	@include mdc-elevation(4);
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: white;
+	padding: 10px;
 }

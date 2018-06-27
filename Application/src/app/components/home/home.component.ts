@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MdcFabModule, MdcMenuModule } from '@angular-mdc/web';
 
 @Component({
 	selector: 'app-home',

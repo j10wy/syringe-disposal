@@ -12,6 +12,7 @@ import { VolunteerDetailsComponent } from './components/volunteers/volunteer-det
 import { VolunteerCreateComponent } from './components/volunteers/volunteer-create/volunteer-create.component';
 import { VolunteerListComponent } from './components/volunteers/volunteer-list/volunteer-list.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { AppMaterialModule } from './app-material.module';
 
 @NgModule({
 	declarations: [
@@ -27,7 +28,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 		VolunteerListComponent,
 		NotFoundComponent
 	],
-	imports: [AppRoutingModule, BrowserModule],
+	imports: [AppRoutingModule, BrowserModule, AppMaterialModule],
 	providers: [],
 	bootstrap: [AppComponent]
 })
