@@ -12,5 +12,12 @@ Dialogflow uses intents to categorize a user's intentions. Dialogflow intents ha
 * Parameters are important/relevanet words or phrases in a user' query that are extracted so your agent can provide the user with the proper response.
 * Parameters can be used in the agent's response to a user
 
+#### Follow-up Intents
+* Follow-up intents are matched after the the parent intent has been matched by the agent.
+* Follow-up intents can respond with parameter(s) gathered from the parent intent.
 
 ### Entities
+
+### Contexts
+
+* Contexts store parameter values which can be imported/exported in to other intents.
