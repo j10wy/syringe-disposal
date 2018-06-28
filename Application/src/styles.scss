@@ -11,18 +11,6 @@ body {
 	padding: 0px;
 }
 
-.demo-main {
-	padding-left: 16px;
-	padding-right: 16px;
-	padding-bottom: 16px;
-	overflow: auto;
-}
-
-.demo-controls-container {
-	@include mdc-elevation(4);
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	background-color: white;
-	padding: 10px;
+div.container {
+	margin-top: 80px;
 }

@@ -8,11 +8,14 @@ import { LoggerDirective } from './directives/logger.directive';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component';
+import { VolunteersComponent } from './components/volunteers/volunteers.component';
 import { VolunteerDetailsComponent } from './components/volunteers/volunteer-details/volunteer-details.component';
 import { VolunteerCreateComponent } from './components/volunteers/volunteer-create/volunteer-create.component';
 import { VolunteerListComponent } from './components/volunteers/volunteer-list/volunteer-list.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AppMaterialModule } from './app-material.module';
+import { DrawerComponent } from './components/drawer/drawer.component';
+import { SubmitComponent } from './components/submit/submit.component';
 
 @NgModule({
 	declarations: [
@@ -23,10 +26,13 @@ import { AppMaterialModule } from './app-material.module';
 		DashboardComponent,
 		NavbarComponent,
 		SandboxComponent,
+		VolunteersComponent,
 		VolunteerDetailsComponent,
 		VolunteerCreateComponent,
 		VolunteerListComponent,
-		NotFoundComponent
+		NotFoundComponent,
+		DrawerComponent,
+		SubmitComponent
 	],
 	imports: [AppRoutingModule, BrowserModule, AppMaterialModule],
 	providers: [],
